@@ -54,7 +54,7 @@ class InteractiveRecord
   end
 
   def self.find_by(anyattribute) #passes in a hash
-  #binding.pry
+  binding.pry
     #anyattribute = {:name=>"Susan"} (for this spec) need to find the matching row in the db.
     key = anyattribute.keys[0]  #assign local variable 'key' set to the hashes' first index (hash that is passed in) the key here for this instance is :name
     value = anyattribute.values[0] #assign local variable 'value' set to that hashes' second index (the value, i.e. "susan" for this instance)
